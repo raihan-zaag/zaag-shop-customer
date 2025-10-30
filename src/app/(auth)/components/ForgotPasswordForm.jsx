@@ -1,0 +1,117 @@
+'use client';
+
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
+import Image from 'next/image';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/common/components/ui/form';
+import { Input } from '@/common/components/ui/input';
+import { Button } from '@/common/components/ui/button';
+import { sendResetPasswordOTP } from '@/app/(auth)/services/authService';
+import useNotification from '@/common/hooks/useNotification';
+import Typography from '@/common/components/Typography';
+
+// Validation schema
+const forgotPasswordSchema = z.object({
+  email: z
+    .string()
+    .min(1, 'Email is required')
+    .email('Please enter a valid email address'),
+});
+
+const ForgotPasswordForm = () => {
+  const { openErrorNotification, openSuccessNotification } = useNotification();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const form = useForm({
+    resolver: zodResolver(forgotPasswordSchema),
+    mode: 'onChange',
+    defaultValues: {
+      email: '',
+    },
+  });
+
+  const onSubmit = async (values) => {
+    setIsLoading(true);
+
+    try {
+      const response = await sendResetPasswordOTP(values.email);
+
+      if (response.success) {
+        openSuccessNotification(
+          'Success',
+          response.message || 'Verification code sent successfully'
+        );
+      }
+    } catch (error) {
+      openErrorNotification('Error', error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <div className="w-full md:w-500px bg-background p-sp-md lg:p-sp-lg xl:p-sp-3xl rounded-primary border border-border">
+      <div className="flex flex-col items-center justify-center border-b border-b-border pb-4">
+        <h2 className="text-2xl font-semibold">Forgot Password</h2>
+      </div>
+
+      <div className="w-full flex justify-center xl:p-sp-3xl">
+        <Image
+          src={'/images/auth/forgot_password_image.png'}
+          width={1000}
+          height={1000}
+          quality={100}
+          alt="reset password"
+          className="size-62.5"
+        />
+      </div>
+
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col gap-4 md:gap-3 mt-10"
+        >
+          <Typography.Description>
+            Enter the email address which is linked to your account
+          </Typography.Description>
+
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-dark font-medium text-sm">
+                  Email Id
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="username@mail.com" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <Button
+            type="submit"
+            disabled={isLoading}
+            className="w-full mt-sp-md"
+            loading={isLoading}
+          >
+            {isLoading ? 'Please wait...' : 'Get Code'}
+          </Button>
+        </form>
+      </Form>
+    </div>
+  );
+};
+
+export default ForgotPasswordForm;

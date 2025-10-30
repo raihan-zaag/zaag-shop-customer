@@ -1,0 +1,417 @@
+{
+  "country": {
+    "name": "Sweden",
+    "code": "SE"
+  },
+  "states": [
+    {
+      "name": "Stockholm County",
+      "code": "AB",
+      "cities": [
+        "Stockholm",
+        "Södertälje",
+        "Nacka",
+        "Sollentuna",
+        "Huddinge",
+        "Haninge",
+        "Botkyrka",
+        "Salem",
+        "Ekerö",
+        "Upplands Väsby",
+        "Vallentuna",
+        "Täby",
+        "Danderyd",
+        "Vaxholm",
+        "Norrtälje",
+        "Sigtuna",
+        "Nynäshamn",
+        "Håbo",
+        "Österåker",
+        "Värmdö",
+        "Nykvarn",
+        "Knivsta"
+      ]
+    },
+    {
+      "name": "Västra Götaland County",
+      "code": "O",
+      "cities": [
+        "Gothenburg",
+        "Borås",
+        "Trollhättan",
+        "Uddevalla",
+        "Vänersborg",
+        "Skövde",
+        "Lidköping",
+        "Mariestad",
+        "Strömstad",
+        "Partille",
+        "Lerum",
+        "Stenungsund",
+        "Tjörn",
+        "Orust",
+        "Sotenäs",
+        "Munkedal",
+        "Tanum",
+        "Dals-Ed",
+        "Färgelanda",
+        "Ale",
+        "Vårgårda",
+        "Bollebygd",
+        "Grästorp",
+        "Essunga",
+        "Karlsborg",
+        "Gullspång",
+        "Tranemo",
+        "Bengtsfors",
+        "Mellerud",
+        "Lilla Edet",
+        "Mark",
+        "Svenljunga",
+        "Herrljunga",
+        "Vara",
+        "Götene",
+        "Tibro",
+        "Töreboda",
+        "Falköping",
+        "Kil",
+        "Tidaholm"
+      ]
+    },
+    {
+      "name": "Skåne County",
+      "code": "M",
+      "cities": [
+        "Malmö",
+        "Helsingborg",
+        "Lund",
+        "Kristianstad",
+        "Landskrona",
+        "Trelleborg",
+        "Ystad",
+        "Eslöv",
+        "Ängelholm",
+        "Hässleholm",
+        "Höganäs",
+        "Åstorp",
+        "Bara",
+        "Bjuv",
+        "Bromölla",
+        "Burlöv",
+        "Båstad",
+        "Hörby",
+        "Höör",
+        "Klippan",
+        "Lomma",
+        "Osby",
+        "Perstorp",
+        "Simrishamn",
+        "Sjöbo",
+        "Skurup",
+        "Staffanstorp",
+        "Svalöv",
+        "Svedala",
+        "Tomelilla",
+        "Vellinge",
+        "Östra Göinge"
+      ]
+    },
+    {
+      "name": "Uppsala County",
+      "code": "C",
+      "cities": [
+        "Uppsala",
+        "Enköping",
+        "Östhammar",
+        "Tierp",
+        "Älvkarleby",
+        "Knivsta",
+        "Heby",
+        "Håbo"
+      ]
+    },
+    {
+      "name": "Södermanland County",
+      "code": "D",
+      "cities": [
+        "Eskilstuna",
+        "Strängnäs",
+        "Mariefred",
+        "Nyköping",
+        "Oxelösund",
+        "Flen",
+        "Katrineholm",
+        "Vingåker",
+        "Gnesta",
+        "Trosa"
+      ]
+    },
+    {
+      "name": "Östergötland County",
+      "code": "E",
+      "cities": [
+        "Linköping",
+        "Norrköping",
+        "Motala",
+        "Vadstena",
+        "Mjölby",
+        "Finspång",
+        "Åtvidaberg",
+        "Kinda",
+        "Ydre",
+        "Boxholm",
+        "Valdemarsvik"
+      ]
+    },
+    {
+      "name": "Jönköping County",
+      "code": "F",
+      "cities": [
+        "Jönköping",
+        "Värnamo",
+        "Vetlanda",
+        "Eksjö",
+        "Tranås",
+        "Uppvidinge",
+        "Ljungby",
+        "Högsby",
+        "Tingsryd",
+        "Alvesta",
+        "Älmhult",
+        "Markaryd",
+        "Växjö"
+      ]
+    },
+    {
+      "name": "Kronoberg County",
+      "code": "G",
+      "cities": [
+        "Växjö",
+        "Ljungby",
+        "Uppvidinge",
+        "Lessebo",
+        "Tingsryd",
+        "Alvesta",
+        "Älmhult",
+        "Markaryd"
+      ]
+    },
+    {
+      "name": "Kalmar County",
+      "code": "H",
+      "cities": [
+        "Kalmar",
+        "Västervik",
+        "Oskarshamn",
+        "Vimmerby",
+        "Hultsfred",
+        "Mönsterås",
+        "Emmaboda",
+        "Torsås",
+        "Borgholm",
+        "Mörbylånga",
+        "Nybro",
+        "Högsby"
+      ]
+    },
+    {
+      "name": "Gotland County",
+      "code": "I",
+      "cities": [
+        "Visby"
+      ]
+    },
+    {
+      "name": "Blekinge County",
+      "code": "K",
+      "cities": [
+        "Karlskrona",
+        "Ronneby",
+        "Karlshamn",
+        "Sölvesborg",
+        "Olofström"
+      ]
+    },
+    {
+      "name": "Halland County",
+      "code": "N",
+      "cities": [
+        "Halmstad",
+        "Varberg",
+        "Kungsbacka",
+        "Falkenberg",
+        "Laholm",
+        "Hylte"
+      ]
+    },
+    {
+      "name": "Värmland County",
+      "code": "S",
+      "cities": [
+        "Karlstad",
+        "Kristinehamn",
+        "Filipstad",
+        "Hagfors",
+        "Arvika",
+        "Sunne",
+        "Munkfors",
+        "Forshaga",
+        "Grums",
+        "Årjäng",
+        "Eda",
+        "Torsby",
+        "Storfors",
+        "Hammarö",
+        "Säffle",
+        "Kil"
+      ]
+    },
+    {
+      "name": "Örebro County",
+      "code": "T",
+      "cities": [
+        "Örebro",
+        "Kumla",
+        "Hallsberg",
+        "Nora",
+        "Askersund",
+        "Karlskoga",
+        "Degerfors",
+        "Hällefors",
+        "Ljusnarsberg",
+        "Laxå",
+        "Lindesberg"
+      ]
+    },
+    {
+      "name": "Västmanland County",
+      "code": "U",
+      "cities": [
+        "Västerås",
+        "Sala",
+        "Fagersta",
+        "Kungsör",
+        "Köping",
+        "Arboga",
+        "Norberg",
+        "Skinnskatteberg",
+        "Surahammar",
+        "Hallstahammar"
+      ]
+    },
+    {
+      "name": "Dalarna County",
+      "code": "W",
+      "cities": [
+        "Falun",
+        "Borlänge",
+        "Sandviken",
+        "Avesta",
+        "Ludvika",
+        "Rättvik",
+        "Orsa",
+        "Leksand",
+        "Hedemora",
+        "Säter",
+        "Mora",
+        "Älvdalen",
+        "Smedjebacken",
+        "Malung-Sälen",
+        "Gagnef",
+        "Vansbro"
+      ]
+    },
+    {
+      "name": "Gävleborg County",
+      "code": "X",
+      "cities": [
+        "Gävle",
+        "Sandviken",
+        "Söderhamn",
+        "Bollnäs",
+        "Hudiksvall",
+        "Ljusdal",
+        "Hofors",
+        "Ovanåker",
+        "Nordanstig",
+        "Ockelbo"
+      ]
+    },
+    {
+      "name": "Västernorrland County",
+      "code": "Y",
+      "cities": [
+        "Sundsvall",
+        "Härnösand",
+        "Kramfors",
+        "Sollefteå",
+        "Örnsköldsvik",
+        "Ragunda",
+        "Bräcke",
+        "Timrå",
+        "Ånge"
+      ]
+    },
+    {
+      "name": "Jämtland County",
+      "code": "Z",
+      "cities": [
+        "Östersund",
+        "Are",
+        "Berg",
+        "Bräcke",
+        "Härjedalen",
+        "Krokom",
+        "Ragunda",
+        "Strömsund"
+      ]
+    },
+    {
+      "name": "Västerbotten County",
+      "code": "AC",
+      "cities": [
+        "Umeå",
+        "Skellefteå",
+        "Lycksele",
+        "Vindeln",
+        "Robertsfors",
+        "Norsjö",
+        "Malå",
+        "Storuman",
+        "Sorsele",
+        "Dorotea",
+        "Vännäs",
+        "Vilhelmina",
+        "Åsele",
+        "Nordmaling",
+        "Bjurholm"
+      ]
+    },
+    {
+      "name": "Norrbotten County",
+      "code": "BD",
+      "cities": [
+        "Luleå",
+        "Piteå",
+        "Boden",
+        "Kalix",
+        "Haparanda",
+        "Kiruna",
+        "Gällivare",
+        "Älvsbyn",
+        "Luleå",
+        "Övertorneå",
+        "Pajala",
+        "Jokkmokk",
+        "Arjeplog",
+        "Arvidsjaur"
+      ]
+    }
+  ],
+  "postalCodeInfo": {
+    "format": "### ##",
+    "pattern": "^[0-9]{3}\\s?[0-9]{2}$",
+    "example": "123 45",
+    "description": "Swedish postal codes consist of 5 digits with a space after the third digit"
+  }
+}

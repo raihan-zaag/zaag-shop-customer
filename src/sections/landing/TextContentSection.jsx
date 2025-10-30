@@ -1,0 +1,33 @@
+
+import Container from "@/common/components/shared/Container";
+import Typography from "@/common/components/Typography";
+
+const TextContentSection = () => {
+    return (
+        <Container
+            className='text-center py-xl lg:py-sp-2xl xl:py-sp-5xl space-y-2'
+        >
+            <Typography.Title1>
+                Crafted by Culture. Inspired by Nature.
+            </Typography.Title1>
+
+            <Typography.Paragraph
+                className="text-text-secondary"
+            >
+                Northern Handicraft is a brand rooted in the heart of Swedish culture — celebrating generations of craftsmanship,
+                sustainability, and indigenous pride. Every product we create is handcrafted using natural jute and eco-friendly
+                materials, supporting local artisans and empowering rural communities.
+            </Typography.Paragraph>
+
+            <Typography.Paragraph
+                className="text-text-secondary"
+            >
+                Our mission is to preserve traditional techniques while reimagining them for the modern world. Through thoughtful
+                design and ethical production, we bring you timeless, earth-conscious products that tell a story — one woven by
+                hand, heart, and heritage.
+            </Typography.Paragraph>
+        </Container>
+    );
+};
+
+export default TextContentSection;
