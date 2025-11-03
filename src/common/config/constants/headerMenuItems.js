@@ -4,6 +4,7 @@ import {
   PATH_PRODUCTS,
   PATH_CONTACT_US,
   PATH_PRODUCTS_SORT_BY,
+  PATH_PRICING,
 } from "./routes";
 
 import { Bell, Heart, MapPin, ShoppingBag, User } from "lucide-react";
@@ -25,6 +26,8 @@ export const staticMenuItems = [
   { name: "New Arrivals", link: PATH_PRODUCTS_SORT_BY("new-arrivals") },
   { name: "Track Order", link: PATH_TRACK_ORDER },
   { name: "Contact us", link: PATH_CONTACT_US },
+  { name: "Pricing", link: PATH_PRICING },
+
 ];
 
 export const getHeaderMenuItems = () => {

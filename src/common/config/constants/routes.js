@@ -24,6 +24,7 @@ export const PATH_PRODUCT_DETAILS = "/products";
 export const PATH_CART = "/cart";
 export const PATH_CHECKOUT = "/checkout";
 export const PATH_TRACK_ORDER = "/track-order";
+export const PATH_PRICING = "/pricing";
 
 // Order Routes
 export const PATH_ORDER_SUCCESS = "/orders/success";
