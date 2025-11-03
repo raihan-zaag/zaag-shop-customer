@@ -1,15 +1,14 @@
 "use client";
 import { useState, useMemo } from "react";
 
-export default function SubscriptionSection() {
+export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState("monthly");
 
-  // Memoized configuration to prevent re-renders
   const config = useMemo(() => ({
     title: "Choose the right plan to power your business growth.",
     subtitle: "Select a plan that's as unique as your business, with transparent pricing and scalable features",
     currency: "৳",
-    containerClasses: "w-full py-16 flex flex-col items-center",
+    containerClasses: "w-full pt-5 pb-15 flex flex-col items-center",
     gridClasses: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[95%] lg:w-[85%]",
     billingOptions: [
       {
@@ -55,7 +54,6 @@ export default function SubscriptionSection() {
     }
   }), []);
 
-  // Memoized base plans data to prevent re-renders
   const basePlansData = useMemo(() => [
     {
       id: "standard",
@@ -142,7 +140,6 @@ export default function SubscriptionSection() {
     const currentBillingOption = config.billingOptions.find(option => option.id === billingCycle);
     
     return basePlansData.map(plan => {
-      // Safety check for pricing data
       if (!plan.pricing || !plan.pricing[billingCycle]) {
         console.error(`Missing pricing data for plan ${plan.name} and billing cycle ${billingCycle}`);
         return {
@@ -177,16 +174,12 @@ export default function SubscriptionSection() {
     });
   }, [billingCycle, config, basePlansData]);
 
-  // Dynamic theme getter
   const getTheme = (plan) => plan.primary ? config.theme.primary : config.theme.secondary;
 
-  // Dynamic action handlers
   const handlePlanClick = (plan) => {
     if (plan.isContact) {
-      // Handle contact action
       window.location.href = '/contact-us';
     } else {
-      // Handle subscription action  
       window.location.href = `/checkout?plan=${plan.id}&cycle=${billingCycle}`;
     }
   };
@@ -234,7 +227,6 @@ export default function SubscriptionSection() {
             <div
               key={plan.id}
               className={`w-full rounded-xl border shadow-sm p-6 transition-all duration-300 ${theme.cardClasses}`}
-              //onClick={() => handlePlanClick(plan)}
             >
               <p className={`text-sm font-medium mb-1 ${theme.textClasses.name}`}>
                 {plan.name}
